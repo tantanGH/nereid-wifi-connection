@@ -2,15 +2,23 @@
 
 X680x0 + Nereid - Internet connection setup guide
 
-
 ---
 
 ## はじめに
 
+X680x0 実機 + Nereid (USB/LAN/MEM拡張ボード) を家庭内 Wi-Fi LANに参加させる際の構成例の覚書です。
+
+以下の3つの構成について記述しています。
+
+1. Wi-Fiルータに物理的にケーブル接続
+
+2. Wi-Fiコンバータの利用
+
+3. Raspberry Piの利用
 
 ---
 
-## 接続例
+## 接続概略図
 
 ### 1. Wi-Fiルータに物理的にケーブル接続
 
