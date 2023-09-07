@@ -160,6 +160,7 @@ Nereidの推奨設定に従うが、ether_ne.sys の代わりに etherL12.sys �
 ### X680x0側設定 (AUTOEXEC.BAT)
 
 設定1,2とは異なるので注意
+
         SET SYSROOT=C:\
         xip -n2
         ifconfig lp0 up
