@@ -190,6 +190,8 @@ Nereidの推奨設定に従うが、ether_ne.sys の代わりに etherL12.sys �
 
 ### Raspberry Pi設定 (iptables)
 
+この設定を行わない場合は X680x0 - Raspberry Pi 間の peer-to-peer 通信のみとなります。
+
         $ sudo apt install iptables-persistent
         $ sudo iptables –-table nat –-append POSTROUTING --out-interface wlan0 -j MASQUERADE
         $ sudo iptables -t nat -L -v -n
