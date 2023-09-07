@@ -183,15 +183,14 @@ Nereidの推奨設定に従うが、ether_ne.sys の代わりに etherL12.sys �
         interface eth0
         static ip_address=192.168.21.101/32
 
+### Raspberry Pi設定 (iptables)
+
+        $ sudo iptables –-table nat –-append POSTROUTING --out-interface wlan0 -j MASQUERADE
+        $ sudo apt install iptables-persistent
+        $ sudo netfilter-persistent save
+
+もし上記設定だけだとルーティングされない場合は以下追加
+
+        $ sudo iptables –-append FORWARD –-in-interface eth0 -j ACCEPT
 
 ---
-
-## 参考にさせて頂いたサイト
-
-* [X680x0のインターネット関係ツールのページ](https://argrath.ub32.org/x680x0/internet.html)
-
-X680x0にPPPその他を移植された白方さんのサイトです。
-
-* [Raspberry PiでWiFiアクセスポイント構築](https://zenn.dev/yutafujii/books/fcb457e798a3d5)
-
-iptablesの設定を使わせて頂きました。
