@@ -108,4 +108,4 @@ X680x0にPPPその他を移植された白方さんのサイトです。
 
 * [Raspberry PiでWiFiアクセスポイント構築](https://zenn.dev/yutafujii/books/fcb457e798a3d5)
 
-iptablesの設定を参考に、というかそのまま使わせて頂きました。。
+iptablesの設定を使わせて頂きました。
