@@ -200,3 +200,9 @@ Nereidの推奨設定に従うが、ether_ne.sys の代わりに etherL12.sys �
         $ sudo iptables –-append FORWARD –-in-interface eth0 -j ACCEPT
 
 ---
+
+## 自前ProxyによるWebサイト閲覧例
+
+<img src='images/webx1.jpeg'/>
+
+<img src='images/webx2.jpeg'/>
