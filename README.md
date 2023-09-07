@@ -1,12 +1,12 @@
-# nereid-internet-connection
+# nereid-wifi-connection
 
-X680x0 + Nereid - Internet connection setup guide
+X680x0 + Nereid + Wi-Fi LAN + Internet connection setup guide
 
 ---
 
 ## はじめに
 
-X680x0 実機 + Nereid (USB/LAN/MEM拡張ボード) を家庭内 Wi-Fi LANに参加させる際の構成例の覚書です。
+X680x0 実機 + Nereid (USB/LAN/MEM拡張ボード) をインターネットに接続可能な家庭内 Wi-Fi LANに参加させる際の構成例の覚書です。
 
 以下の3つの構成について記述しています。
 
