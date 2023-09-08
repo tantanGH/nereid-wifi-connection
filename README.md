@@ -376,6 +376,7 @@ etherL12.sys の代わりに ppp.sys を組み込む。
         SET SYSROOT=C:\
         SET PPP=C:\ETC
         SET PPPLOG=C:\TEMP\PPP.LOG
+        SET HOST=x68030
         tmsio
         xip -n2
         ppp raspi
