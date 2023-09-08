@@ -188,9 +188,29 @@ Nereidの推奨設定に従うが、ether_ne.sys の代わりに etherL12.sys �
         interface eth0
         static ip_address=192.168.21.101/24
 
-### Raspberry Pi設定 (iptables)
+### Raspberry Pi設定 (IPルーティングの有効化 と IPv6の無効化)
 
-この設定を行わない場合は X680x0 - Raspberry Pi 間の peer-to-peer 通信のみとなります。
+これ以降の設定を行わない場合は X680x0 - Raspberry Pi 間の peer-to-peer 通信のみとなります。
+
+        sudo vi /etc/sysctl.conf
+
+コメントアウトされている行を有効化
+
+        net.ipv4.ip_forward=1 
+
+以下の行を追加
+
+        net.ipv6.conf.all.disable_ipv6=1 
+
+再起動
+
+        sudo reboot
+
+ipv6の行が出力されないことを確認
+
+        ifconfig
+
+### Raspberry Pi設定 (iptables)
 
         $ sudo apt install iptables-persistent
         $ sudo iptables –-table nat –-append POSTROUTING --out-interface wlan0 -j MASQUERADE
