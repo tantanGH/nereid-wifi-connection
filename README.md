@@ -290,14 +290,14 @@ ipv6の行が出力されないことを確認
 
 設定3で既に実施している場合は不要
 
-        $ sudo apt install iptables-persistent
-        $ sudo iptables –-table nat –-append POSTROUTING --out-interface wlan0 -j MASQUERADE
-        $ sudo iptables -t nat -L -v -n
-        $ sudo netfilter-persistent save
+        sudo apt install iptables-persistent
+        sudo iptables –-table nat –-append POSTROUTING --out-interface wlan0 -j MASQUERADE
+        sudo iptables -t nat -L -v -n
+        sudo netfilter-persistent save
 
 もし上記設定だけだとルーティングされない場合は以下追加
 
-        $ sudo iptables –-append FORWARD –-in-interface ppp0 -j ACCEPT
+        sudo iptables –-append FORWARD –-in-interface ppp0 -j ACCEPT
 
 ### Raspberry Pi PPPサーバの起動
 
